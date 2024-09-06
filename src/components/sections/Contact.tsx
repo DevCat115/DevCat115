@@ -7,6 +7,7 @@ import { SectionWrapper } from '../../hoc';
 import { slideIn } from '../../utils/motion';
 import { config } from '../../constants/config';
 import { Header } from '../atoms/Header';
+import { Store } from 'react-notifications-component';
 // import { cloneUniformsGroups } from 'three';
 
 const INITIAL_STATE = Object.fromEntries(
@@ -16,7 +17,7 @@ const INITIAL_STATE = Object.fromEntries(
 const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  accessToken: import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN,
+  accessToken: import.meta.env.VITE_EMAIL_JS_USER_ID,
 };
 
 const Contact = () => {
@@ -48,6 +49,38 @@ const Contact = () => {
     setErrors(newErrors);
   };
 
+  const successNotificationHandle = () => {
+    Store.addNotification({
+      title: "Success!",
+      message: "Thank you. I will get back to you as soon as possible.",
+      type: "success",  // 'default', 'success', 'info', 'warning', 'danger'
+      insert: "top",    // 'top' or 'bottom'
+      container: "top-right",  // Where the notification will appear
+      animationIn: ["animate__animated", "animate__fadeIn"],  // Optional animations
+      animationOut: ["animate__animated", "animate__fadeOut"],
+      dismiss: {
+        duration: 5000,  // Auto-dismiss after 5 seconds
+        onScreen: true
+      }
+    })
+  }
+
+  const failedNotificationHandle = (error : string) => {
+    Store.addNotification({
+      title: "error",
+      message: error,
+      type: "warning",  // 'default', 'success', 'info', 'warning', 'danger'
+      insert: "top",    // 'top' or 'bottom'
+      container: "top-right",  // Where the notification will appear
+      animationIn: ["animate__animated", "animate__fadeIn"],  // Optional animations
+      animationOut: ["animate__animated", "animate__fadeOut"],
+      dismiss: {
+        duration: 5000,  // Auto-dismiss after 5 seconds
+        onScreen: true
+      }
+    })
+  }
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement> | undefined) => {
     if (e === undefined) return;
     e.preventDefault();
@@ -65,12 +98,13 @@ const Contact = () => {
     }
 
     setLoading(true);
+    console.log(form);
     emailjs
       .send(
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
         {
-          form_name: form.name,
+          from_name: form.name,
           to_name: config.html.fullName,
           from_email: form.email,
           to_email: config.html.email,
@@ -81,17 +115,23 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
 
+          //successNotificationHandle()
+
+          alert("Thanks for your email.")
           setForm(INITIAL_STATE);
         },
         error => {
           setLoading(false);
 
-          console.log(error);
-          alert('Something went wrong.');
+          //failedNotificationHandle(error)
+
+          alert(error);
         }
-      );
+      ).catch((reason) => {
+        console.log(reason);
+        alert(reason)
+      })
   };
 
   return (

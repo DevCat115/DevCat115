@@ -35,6 +35,14 @@ import {
   huzatech,
   littlespoon,
   mercari,
+  bigglo_logo,
+  bluesoft_logo,
+  symfa_logo,
+  dibruno,
+  homely,
+  jurat,
+  dextoro,
+  elevator_trips,
 } from '../assets';
 
 export const navLinks: TNavLink[] = [
@@ -132,9 +140,9 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: 'Junior Web Developer',
-    companyName: 'Illumine IT Consulting',
-    icon: Illumine_IT_Consulting,
+    title: 'Frontend Developer',
+    companyName: 'Bigglo',
+    icon: bigglo_logo,
     iconBg: '#383E56',
     date: 'Feb 2015 - Dec 2016',
     points: [
@@ -145,9 +153,9 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: 'Web Developer',
-    companyName: 'InTTrust S.A',
-    icon: InTTrust,
+    title: 'FullStack Developer',
+    companyName: 'BLueSoft',
+    icon: bluesoft_logo,
     iconBg: '#E6DEDD',
     date: 'Jan 2017 - Dec 2021',
     points: [
@@ -158,9 +166,9 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: 'Full Stack Developer',
-    companyName: 'Initiative CRM',
-    icon: initiative_crm_france_logo,
+    title: 'Senior Full Stack Developer',
+    companyName: 'Symfa',
+    icon: symfa_logo,
     iconBg: '#383E56',
     date: 'Feb 2022 - Apr 2023',
     points: [
@@ -171,19 +179,19 @@ const experiences: TExperience[] = [
     ],
   },
 
-  {
-    title: 'Senior Software Engineer',
-    companyName: 'Athens Technology Center',
-    icon: athens_technology_center_logo,
-    iconBg: '#383E56',
-    date: 'May 2023 - Jan 2024',
-    points: [
-      'Led collaborative efforts in designing, developing, and deploying fullstack web applications using React, Angular, Vue.js for the frontend, and Node.js, .Net for the backend.',
-      'Implemented secure authentication and authorization with ASP.NET Identity while optimizing SQL Server databases using Entity Framework Core for performance and data integrity.',
-      'Conducted performance optimization techniques including code splitting, lazy loading, and image optimization to enhance website speed and user experience.',
-      'leveraged Three.js to create immersive 3D web experiences, skillfully manipulating models, implementing shaders, and optimizing performance for seamless rendering across platforms.',
-    ],
-  },
+  // {
+  //   title: 'Senior Software Engineer',
+  //   companyName: 'Athens Technology Center',
+  //   icon: athens_technology_center_logo,
+  //   iconBg: '#383E56',
+  //   date: 'May 2023 - Jan 2024',
+  //   points: [
+  //     'Led collaborative efforts in designing, developing, and deploying fullstack web applications using React, Angular, Vue.js for the frontend, and Node.js, .Net for the backend.',
+  //     'Implemented secure authentication and authorization with ASP.NET Identity while optimizing SQL Server databases using Entity Framework Core for performance and data integrity.',
+  //     'Conducted performance optimization techniques including code splitting, lazy loading, and image optimization to enhance website speed and user experience.',
+  //     'leveraged Three.js to create immersive 3D web experiences, skillfully manipulating models, implementing shaders, and optimizing performance for seamless rendering across platforms.',
+  //   ],
+  // },
 ];
 
 const testimonials: TTestimonial[] = [
@@ -215,10 +223,31 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: 'Memorial keeper',
+    name: 'Di Bruno Bros',
     description:
-      'Social media platform that can upload a video and photos which people can share memories about their loved one who passed away.',
+      "website is a comprehensive resource for purchasing gourmet foods, learning about the company's history and values, and accessing various services they offer.",
     tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'E-commerce',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'JavaScript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: dibruno,
+    sourceCodeLink: 'https://dibruno.com/',
+  },
+  {
+    name: 'Elevate Trips',
+    description:
+      'Elevate Trips offers luxury travel planning services, including high-end accommodations, exclusive experiences, and personalized itineraries. The platform caters to travelers seeking customized, premium travel experiences, providing access to luxury hotels, private tours, and concierge services.',
+      tags: [
       {
         name: 'Next',
         color: 'blue-text-gradient',
@@ -236,8 +265,82 @@ const projects: TProject[] = [
         color: 'green-text-gradient',
       },
     ],
-    image: memorialkepper,
-    sourceCodeLink: 'https://qa.d3hcvz0a3moa1t.amplifyapp.com/',
+    image: elevator_trips,
+    sourceCodeLink: 'https://www.elevatetrips.com/',
+  },
+  {
+    name: 'Dextoro',
+    description:
+      'DexToro is an on-chain derivatives exchange built on Ethereum. It offers decentralized, self-custodial trading of various derivatives, including perpetual futures and options. The platform emphasizes user control, transparency, and performance without compromising security.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Next',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'Trading',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'web3',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: dextoro,
+    sourceCodeLink: 'https://www.dextoro.com/',
+  },
+  {
+    name: 'Homely',
+    description: 'Homely is a distinctive real estate platform in Australia that goes beyond just listing properties. It offers a holistic view of what it’s like to live in different suburbs, thanks to its community-driven content and comprehensive neighborhood reviews. By combining traditional property search features with rich, localized insights, Homely helps users find not only the right property but also the right community. Its user-friendly design and extensive resources make it a valuable tool for anyone looking to buy, sell, or rent a home in Australia.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Node',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'MongoDB',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Next.js',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: homely,
+    sourceCodeLink: 'https://www.homely.com.au/'
+  },
+  {
+    name: 'Jurat',
+    description:
+      'Contributed to building a layer-one blockchain network focused on legal activities on-chain. Developed innovative features for a crypto wallet on the chain.',
+    tags: [
+      {
+        name: 'blockchain',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'web3',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'React',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Node',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: jurat,
+    sourceCodeLink: 'https://jurat.io',
   },
   {
     name: 'Ween.fr',
@@ -263,94 +366,6 @@ const projects: TProject[] = [
     ],
     image: weenfr,
     sourceCodeLink: 'https://www.ween.fr/en/',
-  },
-  {
-    name: 'PetPals',
-    description:
-      "PetPals is a community-driven platform for pet owners to connect with each other, share advice, and organize pet-related events. It's a small, nice website focused on fostering connections within the pet owner.",
-    tags: [
-      {
-        name: 'Angular',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: petpals,
-    sourceCodeLink: 'https://www.petpals.com/',
-  },
-  {
-    name: 'Huzatech',
-    description: 'The website provides booking services for travel, including flights and hotels.',
-    tags: [
-      {
-        name: 'React',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Tailwind CSS',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'PWA',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: huzatech,
-    sourceCodeLink: 'https://b2c.otawix.com/',
-  },
-  {
-    name: 'Little Spoon',
-    description:
-      'Little Spoon emphasizes the use of high-quality, organic ingredients and aims to make healthy eating convenient and accessible for families. ',
-    tags: [
-      {
-        name: 'React',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Next',
-        color: 'orange-text-gradient',
-      },
-
-      {
-        name: 'Node',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: littlespoon,
-    sourceCodeLink: 'https://www.littlespoon.com/',
-  },
-  {
-    name: 'Mercari',
-    description:
-      'Mercari is a C2C marketplace where individuals can enjoy buying and selling items. Through our unique payment deposit system and our use of AI to monitor for fraud, anyone can enjoy safe and secure transactions.',
-    tags: [
-      {
-        name: 'React',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Next',
-        color: 'orange-text-gradient',
-      },
-      {
-        name: 'GraphQL',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'Node',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: mercari,
-    sourceCodeLink: 'https://www.mercari.com/',
   },
 ];
 

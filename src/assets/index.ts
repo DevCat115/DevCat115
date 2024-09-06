@@ -28,12 +28,21 @@ import Illumine_IT_Consulting from './company/Illumine_IT_Consulting.jpg';
 import initiative_crm_france_logo from './company/initiative_crm_france_logo.jpg';
 import InTTrust from './company/InTTrust.jpg';
 
+import bigglo_logo from "./company/bigglojpg.jpg"
+import bluesoft_logo from "./company/bluesoft_logo.jpg"
+import symfa_logo from "./company/symfa_global_logo.jpg"
+
 import memorialkepper from './memorialkeeper.png';
 import petpals from './petpals.png';
 import huzatech from './huzatech.png';
 import littlespoon from './little_spoon.png';
 import mercari from './mercari.png';
 import weenfr from './ween.png';
+import dibruno from './di_bruno_bros.png';
+import homely from './homely.png';
+import dextoro from './dextoro.png';
+import jurat from "./jurat.png";
+import elevator_trips from "./Elevatetrips.png"
 
 export {
   logo,
@@ -69,4 +78,12 @@ export {
   littlespoon,
   mercari,
   weenfr,
+  symfa_logo,
+  bluesoft_logo,
+  bigglo_logo,
+  dibruno,
+  homely,
+  jurat,
+  dextoro,
+  elevator_trips
 };
