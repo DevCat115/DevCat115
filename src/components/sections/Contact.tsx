@@ -7,7 +7,7 @@ import { SectionWrapper } from '../../hoc';
 import { slideIn } from '../../utils/motion';
 import { config } from '../../constants/config';
 import { Header } from '../atoms/Header';
-import { Store } from 'react-notifications-component';
+// import { Store } from 'react-notifications-component';
 // import { cloneUniformsGroups } from 'three';
 
 const INITIAL_STATE = Object.fromEntries(
@@ -49,37 +49,37 @@ const Contact = () => {
     setErrors(newErrors);
   };
 
-  const successNotificationHandle = () => {
-    Store.addNotification({
-      title: "Success!",
-      message: "Thank you. I will get back to you as soon as possible.",
-      type: "success",  // 'default', 'success', 'info', 'warning', 'danger'
-      insert: "top",    // 'top' or 'bottom'
-      container: "top-right",  // Where the notification will appear
-      animationIn: ["animate__animated", "animate__fadeIn"],  // Optional animations
-      animationOut: ["animate__animated", "animate__fadeOut"],
-      dismiss: {
-        duration: 5000,  // Auto-dismiss after 5 seconds
-        onScreen: true
-      }
-    })
-  }
+  // const successNotificationHandle = () => {
+  //   Store.addNotification({
+  //     title: "Success!",
+  //     message: "Thank you. I will get back to you as soon as possible.",
+  //     type: "success",  // 'default', 'success', 'info', 'warning', 'danger'
+  //     insert: "top",    // 'top' or 'bottom'
+  //     container: "top-right",  // Where the notification will appear
+  //     animationIn: ["animate__animated", "animate__fadeIn"],  // Optional animations
+  //     animationOut: ["animate__animated", "animate__fadeOut"],
+  //     dismiss: {
+  //       duration: 5000,  // Auto-dismiss after 5 seconds
+  //       onScreen: true
+  //     }
+  //   })
+  // }
 
-  const failedNotificationHandle = (error : string) => {
-    Store.addNotification({
-      title: "error",
-      message: error,
-      type: "warning",  // 'default', 'success', 'info', 'warning', 'danger'
-      insert: "top",    // 'top' or 'bottom'
-      container: "top-right",  // Where the notification will appear
-      animationIn: ["animate__animated", "animate__fadeIn"],  // Optional animations
-      animationOut: ["animate__animated", "animate__fadeOut"],
-      dismiss: {
-        duration: 5000,  // Auto-dismiss after 5 seconds
-        onScreen: true
-      }
-    })
-  }
+  // const failedNotificationHandle = (error : string) => {
+  //   Store.addNotification({
+  //     title: "error",
+  //     message: error,
+  //     type: "warning",  // 'default', 'success', 'info', 'warning', 'danger'
+  //     insert: "top",    // 'top' or 'bottom'
+  //     container: "top-right",  // Where the notification will appear
+  //     animationIn: ["animate__animated", "animate__fadeIn"],  // Optional animations
+  //     animationOut: ["animate__animated", "animate__fadeOut"],
+  //     dismiss: {
+  //       duration: 5000,  // Auto-dismiss after 5 seconds
+  //       onScreen: true
+  //     }
+  //   })
+  // }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement> | undefined) => {
     if (e === undefined) return;
