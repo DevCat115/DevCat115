@@ -42,7 +42,7 @@ I am passionate about leveraging technology to solve complex problems and drive 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/>
 </p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=devcat115&label=Profile%20views&color=0e75b6&style=flat" alt="devcat115" /> </p>
+# <p align="left"> <img src="https://komarev.com/ghpvc/?username=devcat115&label=Profile%20views&color=0e75b6&style=flat" alt="devcat115" /> </p>
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=devcat115&show_icons=true&locale=en&layout=compact" alt="devcat115" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=devcat115&" alt="devcat115" /></p>
