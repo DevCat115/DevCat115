@@ -20,7 +20,7 @@ In the blockchain space, I have worked on numerous projects involving smart cont
 I am passionate about leveraging technology to solve complex problems and drive digital transformation. I thrive in collaborative environments and enjoy mentoring junior developers to help them grow in their careers.
 
 * 🌍  I'm based in Poland
-* 🖥️  You can check my previous work [Adam Adamek](https://dev-cat115-6ixda11sz-devcat115s-projects.vercel.app/)
+* 🖥️  You can check my previous work [Adam Adamek](https://dev-cat115.vercel.app/)
 * ✉️  You can contact me at [adam800314@gmail.com](mailto:adam800314@gmail.com)
 * 🤝  I'm open to collaborating on **Web** and **Blockchain** projects.
 
