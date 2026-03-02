@@ -7,7 +7,7 @@
   <img src="https://i.giphy.com/media/IdyAQJVN2kVPNUrojM/200.webp" width="100">
 </p>
 
-# Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Adam Adamek
+# Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Michael Nielsen
 
 
 ### Web & Blockchain Developer
@@ -19,9 +19,7 @@ In the blockchain space, I have worked on numerous projects involving smart cont
 
 I am passionate about leveraging technology to solve complex problems and drive digital transformation. I thrive in collaborative environments and enjoy mentoring junior developers to help them grow in their careers.
 
-* 🌍  I'm based in Poland
-* 🖥️  You can check my previous work [Adam Adamek](https://dev-cat115.vercel.app/)
-* ✉️  You can contact me at [adam800314@gmail.com](mailto:adam800314@gmail.com)
+* ✉️  You can contact me at [nielsenmichael360@gmail.com](mailto:nielsenmichael360@gmail.com)
 * 🤝  I'm open to collaborating on **Web** and **Blockchain** projects.
 
 
